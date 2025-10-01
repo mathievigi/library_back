@@ -1,5 +1,5 @@
 
-const build = (res, result) => {
+const ok = (res, result = undefined) => {
     if (result) {
         res.status(200).json(result);
     } else {
@@ -9,4 +9,4 @@ const build = (res, result) => {
     return res;
 };
 
-module.exports = { build }
+module.exports = { ok }
